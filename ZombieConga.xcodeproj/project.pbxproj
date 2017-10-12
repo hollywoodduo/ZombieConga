@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C994FCCE1F8FCB18003D76C9 /* myUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994FCCD1F8FCB18003D76C9 /* myUtils.swift */; };
 		C99D55651F8E91B60080BFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D55641F8E91B60080BFD7 /* AppDelegate.swift */; };
 		C99D556B1F8E91B60080BFD7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D556A1F8E91B60080BFD7 /* GameScene.swift */; };
 		C99D556D1F8E91B60080BFD7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D556C1F8E91B60080BFD7 /* GameViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C994FCCD1F8FCB18003D76C9 /* myUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myUtils.swift; sourceTree = "<group>"; };
 		C99D55611F8E91B60080BFD7 /* ZombieConga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieConga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99D55641F8E91B60080BFD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C99D556A1F8E91B60080BFD7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				C99D55641F8E91B60080BFD7 /* AppDelegate.swift */,
 				C99D556A1F8E91B60080BFD7 /* GameScene.swift */,
+				C994FCCD1F8FCB18003D76C9 /* myUtils.swift */,
 				C99D556C1F8E91B60080BFD7 /* GameViewController.swift */,
 				C99D556E1F8E91B60080BFD7 /* Main.storyboard */,
 				C99D55711F8E91B60080BFD7 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 				C99D556B1F8E91B60080BFD7 /* GameScene.swift in Sources */,
 				C99D556D1F8E91B60080BFD7 /* GameViewController.swift in Sources */,
 				C99D55651F8E91B60080BFD7 /* AppDelegate.swift in Sources */,
+				C994FCCE1F8FCB18003D76C9 /* myUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
