@@ -26,6 +26,11 @@
 		C99D55711F8E91B60080BFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99D55741F8E91B60080BFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C99D55761F8E91B60080BFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E739FC1F914FF400B98A4F /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		C9E739FD1F914FF400B98A4F /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
+		C9E739FE1F914FF400B98A4F /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
+		C9E739FF1F914FF400B98A4F /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		C9E73A001F914FF400B98A4F /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +71,21 @@
 				C99D55711F8E91B60080BFD7 /* Assets.xcassets */,
 				C99D55731F8E91B60080BFD7 /* LaunchScreen.storyboard */,
 				C99D55761F8E91B60080BFD7 /* Info.plist */,
+				C9E739FB1F914FF400B98A4F /* Sounds */,
 			);
 			path = ZombieConga;
+			sourceTree = "<group>";
+		};
+		C9E739FB1F914FF400B98A4F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C9E739FC1F914FF400B98A4F /* backgroundMusic.mp3 */,
+				C9E739FD1F914FF400B98A4F /* hitCat.wav */,
+				C9E739FE1F914FF400B98A4F /* hitCatLady.wav */,
+				C9E739FF1F914FF400B98A4F /* lose.wav */,
+				C9E73A001F914FF400B98A4F /* win.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
