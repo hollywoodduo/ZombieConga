@@ -11,10 +11,22 @@ import SpriteKit
 
 class MainMenuScene: SKScene {
     
+    
+    
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "MainMenu")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
+        
+        let startLabel = SKLabelNode(fontNamed: "ArialRounded")
+        startLabel.text = "Press to Start!"
+        startLabel.fontColor = SKColor.white
+        startLabel.fontSize = 75
+        startLabel.zPosition = 150
+        startLabel.horizontalAlignmentMode = .center
+        startLabel.verticalAlignmentMode = .bottom
+        startLabel.position = CGPoint(x: size.width/2, y: size.height/2)
+        addChild(startLabel)
     }
     
     func sceneTapped() {

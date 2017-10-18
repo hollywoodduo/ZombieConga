@@ -33,14 +33,27 @@ class GameOverScene: SKScene {
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         self.addChild(background)
         
-        let wait = SKAction.wait(forDuration: 3.0)
-        let block = SKAction.run {
-            let myScene = GameScene(size: self.size)
-            myScene.scaleMode = self.scaleMode
-            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
-            self.view?.presentScene(myScene, transition: reveal)
-        }
-        self.run(SKAction.sequence([wait,block]))
+        let playAgainLabel = SKLabelNode(fontNamed: "ArialRounded")
+        playAgainLabel.text = "Press to Play Again!"
+        playAgainLabel.fontColor = SKColor.white
+        playAgainLabel.fontSize = 75
+        playAgainLabel.zPosition = 150
+        playAgainLabel.horizontalAlignmentMode = .center
+        playAgainLabel.verticalAlignmentMode = .bottom
+        playAgainLabel.position = CGPoint(x: size.width/2, y: size.height/2)
+        addChild(playAgainLabel)
+    }
+    
+    func sceneTapped() {
+        let myScene = GameScene(size: self.size)
+        myScene.scaleMode = self.scaleMode
+        let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+        self.view?.presentScene(myScene, transition: reveal)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>,
+                               with event: UIEvent?) {
+        sceneTapped()
     }
 
 }

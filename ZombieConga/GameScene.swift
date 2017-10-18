@@ -32,7 +32,8 @@ class GameScene: SKScene {
         let y = cameraNode.position.y - size.height/2 + (size.height - playableRect.height)/2
         return CGRect(x: x, y: y, width: playableRect.width, height: playableRect.height)
     }
-    let livesLabel = SKLabelNode(fontNamed: "Chalkduster")
+    let livesLabel = SKLabelNode(fontNamed: "Glimstick")
+    let catsLabel = SKLabelNode(fontNamed: "Glimstick")
     
   
     override init(size: CGSize) {
@@ -85,7 +86,7 @@ class GameScene: SKScene {
         addChild(cameraNode)
         camera = cameraNode
         cameraNode.position = CGPoint(x: size.width/2, y: size.height/2)
-        livesLabel.text = "Lives: \(lives)"
+        livesLabel.text = "Lives:  X"
         livesLabel.fontColor = SKColor.black
         livesLabel.fontSize = 100
         livesLabel.zPosition = 150
@@ -93,6 +94,16 @@ class GameScene: SKScene {
         livesLabel.verticalAlignmentMode = .bottom
         livesLabel.position = CGPoint(x: -playableRect.size.width/2 + CGFloat(20), y: -playableRect.size.height/2 + CGFloat(20))
         cameraNode.addChild(livesLabel)
+        
+
+        catsLabel.text = "Cats:  X"
+        catsLabel.fontColor = SKColor.black
+        catsLabel.fontSize = 100
+        catsLabel.zPosition = 150
+        catsLabel.horizontalAlignmentMode = .right
+        catsLabel.verticalAlignmentMode = .bottom
+        catsLabel.position = CGPoint(x: playableRect.size.width/2 - CGFloat(20), y: -playableRect.size.height/2 + CGFloat(20))
+        cameraNode.addChild(catsLabel)
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -109,6 +120,7 @@ class GameScene: SKScene {
          boundsCheckZombie()
          moveTrain()
          moveCamera()
+         livesLabel.text = "Lives: \(lives)"
         if lives <= 0 && !gameOver {
             gameOver = true
             print("You lose!")
@@ -307,6 +319,7 @@ class GameScene: SKScene {
             let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
             view?.presentScene(gameOverScene, transition: reveal)
         }
+        catsLabel.text = "Cats: \(trainCount)"
     }
     
     func loseCats() {

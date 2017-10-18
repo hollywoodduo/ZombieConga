@@ -21,6 +21,7 @@
 		C99D55701F8E91B60080BFD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99D556E1F8E91B60080BFD7 /* Main.storyboard */; };
 		C99D55721F8E91B60080BFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99D55711F8E91B60080BFD7 /* Assets.xcassets */; };
 		C99D55751F8E91B60080BFD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99D55731F8E91B60080BFD7 /* LaunchScreen.storyboard */; };
+		C9D6C54C1F97A1D300499D12 /* GLIMSTIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C9D6C54B1F97A1AA00499D12 /* GLIMSTIC.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C99D55711F8E91B60080BFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99D55741F8E91B60080BFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C99D55761F8E91B60080BFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D6C54B1F97A1AA00499D12 /* GLIMSTIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GLIMSTIC.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				C99D55711F8E91B60080BFD7 /* Assets.xcassets */,
 				C99D55731F8E91B60080BFD7 /* LaunchScreen.storyboard */,
 				C99D55761F8E91B60080BFD7 /* Info.plist */,
+				C9D6C54B1F97A1AA00499D12 /* GLIMSTIC.TTF */,
 			);
 			path = ZombieConga;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D6C54C1F97A1D300499D12 /* GLIMSTIC.TTF in Resources */,
 				C99D55701F8E91B60080BFD7 /* Main.storyboard in Resources */,
 				C900C4461F94F10000460E0C /* win.wav in Resources */,
 				C900C4431F94F0F900460E0C /* hitCat.wav in Resources */,
